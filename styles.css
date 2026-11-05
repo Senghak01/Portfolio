@@ -391,6 +391,11 @@ h1 {
     url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80");
 }
 
+.project-blue-panda {
+  background: linear-gradient(135deg, rgba(30, 64, 175, 0.85), rgba(59, 130, 246, 0.55)),
+    url("https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=1200&q=80");
+}
+
 .project-two {
   background: linear-gradient(135deg, rgba(255, 151, 133, 0.75), rgba(216, 109, 255, 0.5)),
     url("https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80");
@@ -404,6 +409,11 @@ h1 {
 .project-four {
   background: linear-gradient(135deg, rgba(168, 85, 247, 0.8), rgba(99, 102, 241, 0.5)),
     url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80");
+}
+
+.project-five {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.8), rgba(16, 185, 129, 0.5)),
+    url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80");
 }
 
 .project-content {
@@ -486,7 +496,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .contact-box h2 {
@@ -494,10 +504,73 @@ h1 {
   letter-spacing: -0.05em;
 }
 
+.contact-subtext {
+  color: var(--muted);
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.contact-card-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
 .contact-actions {
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.btn-telegram {
+  background: #24a1de;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-weight: 600;
+}
+
+.btn-telegram:hover {
+  background: #1f8ec4;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(36, 161, 222, 0.35);
+}
+
+.telegram-qr-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.telegram-qr-card:hover {
+  transform: translateY(-3px);
+  border-color: #24a1de;
+  box-shadow: 0 10px 25px rgba(36, 161, 222, 0.2);
+}
+
+.telegram-qr-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.telegram-qr-card span {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 0.45rem;
+  text-align: center;
+  font-weight: 600;
 }
 
 .site-footer {
@@ -564,6 +637,14 @@ h1 {
   .contact-box {
     text-align: center;
     justify-items: center;
+  }
+
+  .contact-card-wrap {
+    justify-content: center;
+  }
+
+  .contact-actions {
+    align-items: center;
   }
 }
 
